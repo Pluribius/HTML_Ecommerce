@@ -1,0 +1,125 @@
+Tipo de Actividad: Desarrollo de Ejercicios
+
+ 
+
+Propósito: Basándose en los contenidos programáticos especificados en el
+
+núcleo temático de Programación III, donde diseñaras formularios web, utilizando los nuevos elementos, propiedades y atributos que ofrece HTML5 y CSS3
+
+ 
+
+Instrucciones de la actividad: Elaborar un proyecto en HTML/CSS3 donde se aplicarán los conocimientos adquiridos en la unidad.
+
+ 
+
+1.    Crea un sitio web de una marca ficticia o real de TIENDA ONLINE, de tu preferencia, donde las páginas internas serán:
+
+a.    Inicio
+
+b.    Nosotros o ¿Quiénes somos?
+
+c.    Servicios o Productos (Agregar submenú con páginas internas hablando detalladamente de cada servicio o producto detalladamente de manera individual)
+
+d.    Contacto
+
+2.    Cada página deberá tener su header y footer, en el header se ubicará el menú y logo de la marca, de manera horizontal.
+
+3.    Descripción de cada página interna:
+
+a.    INICIO: Constará de 3 secciones. (Breve reseña quienes somos (Imagen de un lado, información de otro), hablar los productos o servicios y mostrarlos, formulario de contacto y datos de contacto, dirección, telefono, correo, etc.)
+
+b.    NOSOTROS: Constará de 2 secciones (Información sobre nosotros, misión y visión, imagen de cada lado en cada sección, que se alterne, la primera izquierda, la segunda derecha)
+
+c.    SERVICIOS O PRODUCTOS: Listado de productos o servicios en grid, 2 o 4 columnas. Nombre, descripción y precio. Link de contacto por WhatsApp.
+
+d.    CALCULADORA: Debe ser una página interna donde realices una calculadora de servicios, funciona como presupuesto, es decir, que según los diversos servicios que escoja deba sumar y mostrar el resultado en html.
+
+e.    CONTACTO: Información de contacto, dirección, horario de trabajo y formulario de contacto (Nombre, Apellido, Teléfono, Correo Electrónico, Mensaje), debe mostrar una alerta con SweetAlert o un mensaje que indique que el mensaje fue enviado, tal como fue explicado. 
+
+ 
+
+Consideraciones:
+
+·         En el header debe ubicarse el menú
+
+·         El texto de párrafo debe estar justificado y tamaño 12px
+
+·         El título principal (h1) debe tener un tamaño de 28px
+
+·         El titulo secundario (h2) debe de tener un tamaño de 18px
+
+·         Coloca una canción instrumental de fondo solo en el index.
+
+·         El Header  y Footer debe tener un color de fondo, utiliza paletas de colores generadas en https://coolors.co/, que sea de tu agrado.
+
+·         Utilizar Formulario, Tablas, clases incrustadas, enlaces.
+
+·         Utiliza animaciones y efectos de CSS (Debe llevar todo, linkear css)
+
+·         Ingresa básico de PHP o JS para capturar la información del formulario
+
+ 
+
+IMPORTANTE: La creatividad queda de tu parte, puedes añadir lo que creas necesario para hacer tu sitio web dinámico y atractivo. La creatividad se evaluará.
+
+ 
+
+ 
+
+Disposición de forma
+
+·         La práctica debe ser realizada en archivos .html y guardado en una carpeta con sus elementos (imágenes, audios, videos), para asi ser comprimida en WINRAR, en un .zip.
+
+·         El participante no debe Utilizar copias textuales de códigos de la internet.
+
+·         EL participante debe realizar la entrega de la asignación en la forma indicada en las instrucciones de entrega.
+
+·         IMPORTANTE: Todos los archivos HTML deberán ser comentados con
+<!-- COMENTARIOS --> dando breve información de cada bloque
+
+·         Utiliza el editor de código que sea de tu preferencia (Sublime text, bloc de notas, visual studio code)
+
+
+Ponderación Máxima: 20%
+
+Criterios de evaluación
+
+·         Cumplimiento de Requisitos y Especificaciones          25 puntos
+
+·         Semántica y Estructura                                                     25 puntos
+
+·         Multimedia y Formulario                                                   20 puntos
+
+·         Funcionalidad                                                                     20 puntos
+
+·         Defensa                                                                              10 puntos
+
+ 
+
+ 
+
+Fecha de entrega: Desde el 24/04/2025 a las 00:01 hasta el 04/05/2025 a las 23:59 (Hora Venezuela)
+
+ 
+
+Instrucciones para enviar la asignación:
+
+ 
+
+1.    Realizar la asignación en archivos HTML y carpetas correspondientes de elementos (img, css)
+
+2.    Comprimir en formato ZIP o RAR el proyecto.
+
+3.    Hacer, clic en 'Subir Archivos'.
+
+4.    Hacer, clic en 'EXAMINAR ".
+
+5.    Hacer, clic en 'Subir Archivo “.
+
+6.    Hacer, clic en 'Seleccionar Archivo'.
+
+7.    Buscamos en el Archivo de la PC a enviar a la Plataforma y hacemos clic en 'Abrir'.
+
+8.    Luego hacer clic en 'Subir Archivo'.
+
+9.    Luego hacer clic en 'Guardar

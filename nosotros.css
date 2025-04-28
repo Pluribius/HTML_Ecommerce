@@ -1,0 +1,212 @@
+.mision-vision {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+
+  
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #f8fafc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 1.75rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mision-vision div {
+  width: 45%;
+}
+.titulo-seccion {
+  /* Corrección: section-title a titulo-seccion */
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.seccion-historia,
+.seccion-formacion,
+.seccion-crecimiento,
+.seccion-clientes,
+.seccion-especializacion {
+  /* Corrección: nombres de secciones */
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #f8fafc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 1.75rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.seccion-historia:hover,
+.seccion-formacion:hover,
+.seccion-crecimiento:hover,
+.seccion-clientes:hover,
+.seccion-especializacion:hover,
+.mision-vision:hover {
+  /* Corrección: nombres de secciones */
+  transform: translateY(-0.5rem);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.seccion-historia h3,
+.titulo-seccion h3,
+.seccion-formacion h3,
+.seccion-crecimiento h3,
+.seccion-clientes h3,
+.seccion-especializacion h3 {
+  /* Corrección: nombres de secciones */
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+  text-align: center;
+}
+.seccion-historia p,
+.seccion-formacion p,
+.seccion-crecimiento p {
+  /* Corrección: nombres de secciones */
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+.seccion-clientes ul {
+  /* Corrección: nombres de secciones */
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+.seccion-especializacion ul {
+  /* Corrección: nombres de secciones */
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+.seccion-especializacion ul li {
+  /* Corrección: nombres de secciones */
+  margin-bottom: 0.75rem;
+}
+.valores-empresa {
+  /* Corrección: company-values a valores-empresa */
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+.valores-empresa li {
+  /* Corrección: company-values a valores-empresa */
+  margin-bottom: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  background-color: #e5e7eb;
+  color: #459187;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  
+}
+.valores-empresa li:hover {
+  /* Corrección: company-values a valores-empresa */
+  background-color:rgba(54, 141, 160, 0.7);
+  transform: translateX(0.5rem);
+}
+.valores-empresa li:before {
+  /* Corrección: company-values a valores-empresa */
+  content: "✓";
+  margin-right: 0.75rem;
+  color: #000201;
+  font-weight: 600;
+}
+
+/* Estilos para el carrusel */
+.carrusel {
+  /* Corrección: carousel a carrusel */
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carrusel-interno {
+  /* Corrección: carousel-inner a carrusel-interno */
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-item {
+  /* Sin cambios: carousel-item se mantiene ya que es un nombre genérico y descriptivo */
+  min-width: 100%;
+  flex-shrink: 0;
+  display: none;
+}
+
+.carrusel-item.active {
+  /* Sin cambios: .active se mantiene ya que es un nombre genérico y descriptivo */
+  display: block;
+}
+
+.carrusel-item img {
+  /* Sin cambios: img se mantiene ya que es un nombre de elemento HTML */
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.control-carrusel {
+  /* Corrección: carousel-control a control-carrusel */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.control-carrusel:hover {
+  /* Corrección: carousel-control a control-carrusel */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.control-carrusel-prev {
+  /* Corrección: carousel-control-prev a control-carrusel-prev */
+  left: 1rem;
+}
+
+.control-carrusel-next {
+  /* Corrección: carousel-control-next a control-carrusel-next */
+  right: 1rem;
+}
+
+.seccion-clientes ul li {
+  /* Corrección: clientes-section a seccion-clientes */
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  background-color: #9abbc9;
+  color: #070b0c;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.seccion-clientes ul li:before {
+  /* Corrección: clientes-section a seccion-clientes */
+  content: "✓";
+  margin-right: 0.75rem;
+  color: #10b981;
+  font-weight: 600;
+}
+.seccion-especializacion ul li:hover {
+  /* Corrección: specialization-section a seccion-especializacion */
+  background-color: rgba(54, 141, 160, 0.7);
+  transform: translateX(0.5rem);
+}

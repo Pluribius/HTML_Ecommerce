@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Servicios de Consultoría</title>
+
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="style.css" />
+
+
+  </head>
+  <body>
+    <header class="navbar">
+      <div style="display: flex">
+        <img
+          src="resources/logo.png"
+          style="height: 40px; width: 40px; padding-left: 20px"
+        />
+        <div style="padding-left: 25px; font-weight: bold; font-size: 25px">
+          Vanguard Consulting
+        </div>
+      </div>
+
+      <nav>
+        <ul style="flex: auto">
+          <li>
+            <a href="#inicio" class="navbar_contents">Inicio</a>
+          </li>
+          <li><a href="nosotros.html" class="navbar_contents">Nosotros</a></li>
+          <li>
+            <a href="servicios.html" class="navbar_contents">Servicios</a>
+          </li>
+          <li>
+            <a
+              href="contacto.html"
+              class="navbar_contents"
+              style="font-weight: bolder; font-size: larger"
+              >Contacto</a
+            >
+          </li>
+          <li>
+            <a href="calculadora.html" class="navbar_contents">Cotizacion</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="text-3xl font-semibold text-gray-800 mb-6 text-center">
+      Calculadora de Servicios de Consultoría
+    </h1>
+    <div class="main-container"></div>
+    <div id="detalleModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Detalle de Precios</h2>
+        <div id="resultado-calculo" class="mt-4"></div>
+      </div>
+    </div>
+  </body>
+</html>

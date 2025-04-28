@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="index.js"></script>
+    <script src="navbar.js"></script>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="servicios.css" />
+
+</head>
+<body class="body">
+    <header class="navbar">
+        <div style="display: flex;">
+            <img src="resources/logo.png" style="height: 40px; width: 40px ; padding-left: 20px;">
+            <div  style="padding-left: 25px; font-weight: bold; font-size: 25px;" >Vanguard Consulting</div>
+        </div>
+
+        <nav >
+            <ul style="flex: auto;">
+                <li><a href="#inicio" class="navbar_contents" style="font-weight: bolder;font-size: larger;">Inicio</a></li>
+                <li><a href="nosotros.html" class="navbar_contents">Nosotros</a></li>
+                <li><a href="servicios.html" class="navbar_contents">Servicios</a></li>
+                <li><a href="contacto.html" class="navbar_contents">Contacto</a></li>
+                <li><a href="calculadora.html" class="navbar_contents">Cotizacion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="video-container" style="padding-top: 2%;">
+        <video controls autoplay muted loop>
+            <source src="resources/attachment_6.mp4" type="video/mp4">
+            Fallo al cargar el video.
+        </video>
+        <div style="display: flex;">
+
+            <div class="title-card" style="max-width: 40%;">
+                <h2 >Quiénes Somos?</h2>
+                <p style="padding-left: 5%; padding-right: 5%; padding-top: 10%; font-weight: bold; color: aliceblue;">
+                    somos una firma de consultoría de ingeniería y arquitectura de vanguardia, dedicada a crear soluciones innovadoras y sostenibles para proyectos de construcción en diversas industrias. </p>
+                <p style="padding-left: 5%; padding-right: 5%;  padding-bottom: 10%; font-weight: bold; color: aliceblue;">
+                    Nuestro equipo multidisciplinario de ingenieros, arquitectos y diseñadores urbanos altamente calificados nos permite ofrecer una gama completa de servicios, desde la concepción y el diseño inicial hasta la gestión de proyectos y la supervisión de la construcción.</p>  
+                </p>
+            </div>
+        <div class="title-card" style="width: 41.3%; padding: 1%;">
+            <h2 style="font-size: larger;"> Algunos de nuestros Clientes </h2>
+            <div class="grid-container" style="display: flex; ">
+                <div class="client-card" onclick="window.location.href='https://www.facebook.com/ConstructorahpOficial ';" >
+                    <img src="resources/cliente1.png" style="max-width: 150px; ">
+                </div>
+                <div class="client-card" onclick="window.location.href='https://edaca.com.ve/';" >
+                    <img src="resources/cliente2.jpg" style="max-width: 150px; ">
+                </div>
+                <div class="client-card" onclick="window.location.href='https://constructoramenda.com/';" >
+                    <img src="resources/cliente3.jpg" style="max-width: 150px; " >
+                </div>
+            </div>
+
+            <div class="grid-container"style="display: flex;">
+                <div class="client-card" onclick="window.location.href='https://www.constructoramg.cl/';">
+                    <img src="resources/cliente4.png" style="max-width: 150px; " >
+                </div>
+                <div class="client-card" onclick="window.location.href='https://gruposambil.com/es/constructora/';" >
+                    <img src="resources/cliente5.jpg" style="max-width: 150px; " >
+                </div>
+                <div class="client-card" onclick="window.location.href='https://es-la.facebook.com/DismaConstruccion/';" >
+                    <img src="resources/cliente6.jpg" style="max-width: 150px; " >
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+    
+    <section class="container" >
+        <h2 class="card" style="background-color:  rgba(85, 130, 139, 0.7);">
+            Nuestros Productos y Servicios
+        </h2>
+
+        <div class="grid-container">
+            <div class="service-card" style="background-color: aliceblue; color: #131a1f;">
+                <h2 class="card-title" style="text-align: center;">Ingeniería Mecánica y Eléctrica </h2>
+                <img src="resources/attachment_5.jpg" alt="Descripción de la imagen" style="max-width: 100%; height: auto; border-radius: 0.5rem;">
+                <p class="card" style=" color: aliceblue; background-color: rgba(85, 130, 139, 0.7)">
+                    Diseño de sistemas de calefacción, ventilación, aire acondicionado, iluminación, energía y plomería.
+                </p>
+            </div>
+            <div class="service-card" style="background-color: aliceblue; color: #131a1f;">
+                <h2 class="card-title" style="text-align: center;">Diseño Arquitectónico</h2>
+                <img src="resources/attachment_2.jpg"alt="Descripción de la imagen" style="max-width: 100%; height: auto; border-radius: 0.5rem;">
+                <p class="card" style=" color: aliceblue; background-color: rgba(85, 130, 139, 0.7)">
+                    Diseño conceptual, desarrollo de diseño, documentación de construcción, diseño de interiores y paisajismo.
+                </p>
+            </div>
+            <div class="service-card" style="background-color: aliceblue; color: #131a1f;">
+                <h2 class="card-title" style="text-align: center;">Gestión de Proyectos</h2>
+                <img src="resources/attachment_4.jpg" alt="Descripción de la imagen" style="max-width: 100%; height: auto; border-radius: 0.5rem;">
+                <p class="card" style=" color: aliceblue; background-color: rgba(85, 130, 139, 0.7)">
+                    Planificación, programación, presupuestación, coordinación y supervisión de proyectos de construcción.
+                </p>
+            </div>
+        </div>
+        <div class="service-card" style="background-color: #131a1f; color: #131a1f;">
+            <h2 class="card" style="background-color: rgba(85, 130, 139, 0.7);" onclick="window.location.href='servicios.html'">
+                Ver Nuestros servicios ---> 
+            </h2>
+        </div>
+ >
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Consultoria de Ingeneniería y Arquitectura. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

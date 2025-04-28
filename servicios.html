@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Vanguard Consulting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="servicios.css" />
+
+</head>
+<body >
+  <header class="navbar">
+    <div style="display: flex;">
+        <img src="resources/logo.png" style="height: 40px; width: 40px ; padding-left: 20px;">
+        <div  style="padding-left: 25px; font-weight: bold; font-size: 25px;" >Vanguard Consulting</div>
+    </div>
+
+    <nav >
+        <ul style="flex: auto;">
+            <li><a href="#inicio" class="navbar_contents" style="font-weight: bolder;font-size: larger;">Inicio</a></li>
+            <li><a href="nosotros.html" class="navbar_contents">Nosotros</a></li>
+            <li><a href="servicios.html" class="navbar_contents">Servicios</a></li>
+            <li><a href="contacto.html" class="navbar_contents">Contacto</a></li>
+            <li><a href="calculadora.html" class="navbar_contents">Cotizacion</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="container mt-8">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <section class="grid">
+            <div class="service-card">
+                <h3>Ingeniería Mecánica y Eléctrica</h3>
+                <img src="resources/attachment_5.jpg" alt="Diseño de sistemas de calefacción, ventilación, aire acondicionado, iluminación, energía y plomería.">
+                <p>
+                    Diseñamos sistemas integrales para edificios, optimizando la eficiencia energética y el confort, cumpliendo con las normativas y estándares más exigentes.
+                </p>
+                <ul class="service-details">
+                    <li>Diseño de sistemas HVAC: <span>ASHRAE Standard 62.1, ISO 17772-1</span></li>
+                    <li>Diseño de sistemas de iluminación: <span>IESNA Lighting Handbook, EN 12464</span></li>
+                    <li>Diseño de sistemas de energía: <span>NEC, IEC 60364</span></li>
+                    <li>Diseño de sistemas de plomería: <span>IPC, EN 806</span></li>
+                    <li>Análisis de eficiencia energética: <span>LEED, Energy Star</span></li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Diseño Arquitectónico</h3>
+                <img src="resources/attachment_2.jpg" alt="Diseño conceptual, desarrollo de diseño, documentación de construcción, diseño de interiores y paisajismo.">
+                <p>
+                    Creamos espacios que combinan funcionalidad, estética y sostenibilidad, reflejando la identidad de nuestros clientes y adhiriéndonos a las normativas de construcción y accesibilidad.
+                </p>
+                <ul class="service-details">
+                    <li>Diseño conceptual: <span>Principios de Diseño de la Bauhaus, Estándares de la UIA</span></li>
+                    <li>Desarrollo de diseño: <span>Normas ISO 4156, Regulaciones locales de edificación</span></li>
+                    <li>Documentación de construcción: <span>Estándares del AIA, Formatos BIM (ISO 19650)</span></li>
+                    <li>Diseño de interiores: <span>Principios de Diseño de Interiores de NKBA, Normas ADA</span></li>
+                    <li>Diseño de paisajismo: <span>Estándares de la ASLA, Directrices de diseño sostenible de SITES</span></li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Gestión de Proyectos</h3>
+                <img src="resources/attachment_4.jpg" alt="Planificación, programación, presupuestación, coordinación y supervisión de proyectos de construcción.">
+                <p>
+                    Gestionamos cada etapa del proyecto, desde la planificación hasta la entrega, asegurando resultados exitosos dentro del presupuesto y el cronograma, utilizando las mejores prácticas de la industria.
+                </p>
+                <ul class="service-details">
+                    <li>Planificación de proyectos: <span>PMBOK del PMI, Metodología PRINCE2</span></li>
+                    <li>Programación de proyectos: <span>Microsoft Project, Primavera P6</span></li>
+                    <li>Presupuestación de proyectos: <span>Normas de Costos de RICS, Software CostX</span></li>
+                    <li>Coordinación de equipos: <span>Comunicación basada en ISO 21500, Herramientas de colaboración como Asana</span></li>
+                    <li>Supervisión de construcción: <span>Normas de seguridad OSHA, Regulaciones locales de construcción</span></li>
+                </ul>
+            </div>
+        </section>
+        <div id="infoModal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2 id="modalTitle">Título del Modal</h2>
+                <div id="modalContent">Contenido del Modal</div>
+                <div id="modalMap"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Consultoria de Ingeneniería y Arquitectura. Todos los derechos reservados.</p>
+    </footer>
+    <script src="servicios.js"></script>
+</body>
+</html>
