@@ -1,59 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora de Servicios de Consultoría</title>
-
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Precios - Vanguard Consulting</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
     <header class="navbar">
-      <div style="display: flex">
-        <img
-          src="resources/logo.png"
-          style="height: 40px; width: 40px; padding-left: 20px"
-        />
-        <div style="padding-left: 25px; font-weight: bold; font-size: 25px">
-          Vanguard Consulting
+        <div style="display: flex">
+            <img
+                src="resources/logo.png"
+                style="height: 40px; width: 40px; padding-left: 20px"
+            />
+            <div style="padding-left: 25px; font-weight: bold; font-size: 25px">
+                Vanguard Consulting
+            </div>
         </div>
-      </div>
 
-      <nav>
-        <ul style="flex: auto">
-          <li>
-            <a href="index.html" class="navbar_contents">Inicio</a>
-          </li>
-          <li><a href="nosotros.html" class="navbar_contents">Nosotros</a></li>
-          <li>
-            <a href="servicios.html" class="navbar_contents">Servicios</a>
-          </li>
-          <li>
-            <a href="contacto.html" class="navbar_contents">Contacto</a>
-          </li>
-          <li>
-            <a
-              href="#calculadora"
-              class="navbar_contents"
-              style="font-weight: bolder; font-size: larger"
-              >Cotizacion</a
-            >
-          </li>
-        </ul>
-      </nav>
+        <nav>
+            <ul style="flex: auto">
+                <li><a href="index.html" class="navbar_contents">Inicio</a></li>
+                <li><a href="nosotros.html" class="navbar_contents">Nosotros</a></li>
+                <li><a href="servicios.html" class="navbar_contents">Servicios</a></li>
+                <li><a href="contacto.html" class="navbar_contents">Contacto</a></li>
+                <li>
+                    <a href="calculadora.html" class="navbar_contents" style="font-weight: bolder; font-size: larger">Cotizacion</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <h1 class="text-3xl font-semibold text-gray-800 mb-6 text-center">
-      Calculadora de Servicios de Consultoría
-    </h1>
-    <div class="main-container"></div>
-    <div id="detalleModal" class="modal">
-      <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <h2>Detalle de Precios</h2>
-        <div id="resultado-calculo" class="mt-4"></div>
-      </div>
-    </div>
-  </body>
+
+    <main class="container mt-8">
+        <h2 class="card">Calculadora de Precios de Servicios</h2>
+        <p class="card">Selecciona los servicios que necesitas y completa los detalles para obtener una estimación de precio.</p>
+
+        <section class="calculator-section" style="background-color:  #f9f9f9;">
+            <div class="service-option">
+                <label for="ingenieria-mecanica">Ingeniería Mecánica y Eléctrica:</label>
+                <input type="checkbox" id="ingenieria-mecanica" name="servicios" value="1000">
+                <div class="details" id="ingenieria-mecanica-details" style="display: none;">
+                    <label for="hvac-horas">Horas de diseño HVAC:</label>
+                    <input type="number" id="hvac-horas" value="0">
+                    <label for="iluminacion-puntos">Puntos de iluminación:</label>
+                    <input type="number" id="iluminacion-puntos" value="0">
+                    </div>
+            </div>
+
+            <div class="service-option">
+                <label for="diseno-arquitectonico">Diseño Arquitectónico:</label>
+                <input type="checkbox" id="diseno-arquitectonico" name="servicios" value="1500">
+                <div class="details" id="diseno-arquitectonico-details" style="display: none;">
+                    <label for="area-proyecto">Área del proyecto (m²):</label>
+                    <input type="number" id="area-proyecto" value="0">
+                    <label for="fases-diseno">Número de fases de diseño:</label>
+                    <input type="number" id="fases-diseno" value="1">
+                    </div>
+            </div>
+
+            <div class="service-option">
+                <label for="gestion-proyectos">Gestión de Proyectos y Planificación:</label>
+                <input type="checkbox" id="gestion-proyectos" name="servicios" value="2000">
+                <div class="details" id="gestion-proyectos-details" style="display: none;">
+                    <label for="duracion-proyecto">Duración estimada del proyecto (meses):</label>
+                    <input type="number" id="duracion-proyecto" value="1">
+                    <label for="complejidad-proyecto">Complejidad del proyecto (1-Alto):</label>
+                    <input type="number" id="complejidad-proyecto" min="1" max="3" value="1">
+                    </div>
+            </div>
+
+            <div class="service-option">
+                <label for="sostenibilidad">Consultoría en Sostenibilidad y Eficiencia Energética:</label>
+                <input type="checkbox" id="sostenibilidad" name="servicios" value="1200">
+                <div class="details" id="sostenibilidad-details" style="display: none;">
+                    <label for="tipo-certificacion">Tipo de certificación buscada:</label>
+                    <select id="tipo-certificacion">
+                        <option value="0">Ninguna</option>
+                        <option value="500">LEED</option>
+                        <option value="400">WELL</option>
+                        </select>
+                    </div>
+            </div>
+
+            <div class="service-option">
+                <label for="bim">Modelado de Información de Construcción (BIM):</label>
+                <input type="checkbox" id="bim" name="servicios" value="1800">
+                <div class="details" id="bim-details" style="display: none;">
+                    <label for="nivel-detalle-bim">Nivel de detalle BIM:</label>
+                    <input type="text" id="nivel-detalle-bim" placeholder="LOD">
+                    </div>
+            </div>
+
+            <div class="service-option">
+                <label for="inspeccion">Inspección y Evaluación de Edificaciones Existentes:</label>
+                <input type="checkbox" id="inspeccion" name="servicios" value="900">
+                <div class="details" id="inspeccion-details" style="display: none;">
+                    <label for="area-inspeccion">Área a inspeccionar (m²):</label>
+                    <input type="number" id="area-inspeccion" value="0">
+                    <label for="tipo-inspeccion">Tipo de inspección:</label>
+                    <select id="tipo-inspeccion">
+                        <option value="estructural">Estructural</option>
+                        <option value="mep">MEP</option>
+                        <option value="general">General</option>
+                        </select>
+                    </div>
+            </div>
+        </section>
+
+        <div class="total-section">
+            <h3>Total Estimado: <span id="total-price">0</span> USD</h3>
+            <button onclick="calculateTotal()" class="button" >Calcular Total</button>
+            <p class="mt-2 text-sm text-gray-600">Este es solo un estimado. Los precios finales pueden variar según la complejidad y los detalles específicos de tu proyecto. Contáctanos para una cotización detallada.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>
+            © 2025 Consultoria de Ingeneniería y Arquitectura. Todos los derechos
+            reservados.
+        </p>
+    </footer>
+
+
+
+</body>
 </html>
